@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservas</title>
+    <link rel="stylesheet" href="/static/styles/reservas.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav class="navbar">
+        <a href="{{ url_for('home') }}" class="logo">
+            <i class="fa-solid fa-house"></i>
+        </a>
+        <ul class="nav-links">
+            <li class="nav-item"><a href="{{ url_for('menus') }}">Menus</a></li>
+            <li class="nav-item"><a href="{{ url_for('reservas') }}">Reservas</a></li>
+            <li class="nav-item"><a href="{{ url_for('resenas') }}">Reseñas</a></li>
+            <li class="nav-item-login"><a href="{{ url_for('login') }}">Login</a></li>
+        </ul>
+    </nav>
+
+    <h1>Reserva tu lugar en restaurante Weekend</h1>
+    <form>
+        <h2>Escribe tu nombre</h2>
+        <input type="text" id="nombreReserva" name="username" class="cuadro" placeholder="Ingresa tu nombre..." required>
+
+        <h3>Ingrese fecha y hora</h3>
+        <input type="datetime-local" id="fechaHoraReserva" class="cuadro" required>
+
+        <button type="button" onclick="guardarReserva()" class="boton">Guardar Reserva</button>
+    </form>
+
+    <div id="mensajeConfirmacion" style="display: none; color: green;">Reserva guardada exitosamente.</div>
+
+    <script src="{{ url_for('static', filename='js/reservas.js') }}"></script>
+</body>
+</html>

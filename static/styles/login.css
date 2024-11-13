@@ -1,0 +1,119 @@
+body{
+    background-image: url(/static/images/restofondo.jpg);
+    background-size:contain;
+    overflow-y: scroll;
+    min-height: 177vh;
+}
+
+nav{
+    background-color: green;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 50px
+}
+
+.nav-links{
+    justify-content: end;
+    margin-top: 50px;
+    padding-right: 20px;
+}
+
+.logo{
+
+    font-size: 30px;
+    color: white;
+    margin: 50px;
+}
+
+.nav-item{
+    margin: 10px;
+}
+
+.nav-item-login{
+    margin-top: 10px;
+}
+
+ul{
+    display: flex;
+    justify-content: right;
+    color: white;
+    list-style-type: none;
+}
+
+.login{
+    display: inline-block;
+    max-width: 300px;
+    margin-left: 735px;
+    margin-top: 100px;
+    border: 40px solid green;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); 
+}
+.login:hover{
+    border: 40px solid green;
+    border-radius: 50px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(255, 255, 255); 
+}
+.login label{
+    display: block;
+}
+.login input{
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    border: 2px solid green;
+}
+.login button{
+    margin-top: 10px;
+    border: 5px solid green;
+    color: green;
+    font-size: xx-large;
+    background-color: rgb(255, 0, 0);
+}
+.login button:hover{
+    color: green;
+    background-color: blue;
+    font-weight: bolder;
+    transition: 1.0s;
+    transform: scale(1.2);
+}
+
+.boton{
+    margin-left: 0px;
+    margin-top: 100px;
+    text-transform: uppercase;
+    border: 5px solid green;
+    color: green;
+    font-size: xx-large;
+    background-color: rgb(192, 146, 146);
+}
+.boton:hover{
+    color: green;
+    background-color: blue;
+    font-weight: bolder;
+    transition: 1.0s;
+    transform: scale(1.2);
+}
+
+.cuadro{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 10vh;
+    background-color: green;
+    border-radius: 50px;
+    margin-top: 100px;
+}
+.welcome-message {
+    margin-top: 56px;
+    margin-right: 10px;
+    color: rgb(60, 14, 102);
+    font-size: 1rem;
+    font-weight: bold;
+ }
+
+
